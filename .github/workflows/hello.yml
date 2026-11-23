@@ -1,0 +1,17 @@
+#Workflow
+name: Hello
+on:
+  push:
+   
+#JObs
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello-Dosto"
+
+
+#Steps
+
+#Actions
