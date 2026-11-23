@@ -1,0 +1,17 @@
+name: Linting a python code file
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code-linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v7
+
+      - name: Install linter
+        run: pip install ruff
+
+      - name: Check the file for linting
+        run: ruff check .
