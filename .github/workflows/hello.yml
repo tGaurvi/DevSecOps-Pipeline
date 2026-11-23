@@ -1,7 +1,7 @@
 #Workflow
 name: Hello
 on:
-  push:
+  workflow_dispatch: 
    
 #JObs
 jobs:
