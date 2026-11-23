@@ -6,7 +6,7 @@ app =Flask(__name__)
 # Basic home route
 @app.route("/")
 def home():
-return "<h1>Hello, World!</h1><p>Your Flask app is running.</p>"
+  return "<h1>Hello, World!</h1><p>Your Flask app is running.</p>"
 
 
 # Simple JSON API endpoint
